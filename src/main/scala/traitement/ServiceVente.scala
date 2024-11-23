@@ -1,0 +1,5 @@
+package traitement
+
+object ServiceVente {
+
+}
