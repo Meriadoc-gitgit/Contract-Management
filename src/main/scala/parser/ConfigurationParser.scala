@@ -1,23 +1,31 @@
 package parser
 
-// import play.api.libs.json._
-
-import scala.io.Source;
-import org.apache.spark.sql.SparkSession
+import org.json4s.DefaultFormats
+import org.json4s.jackson.JsonMethods
+import reader._
 
 object ConfigurationParser {
 
-    def main(args: Array[String]) : Unit = {
+    implicit val format = DefaultFormats
 
-        val spark = SparkSession.builder.appName("SimpleApplication")
-            .config("spark.master", "local")
-            .getOrCreate()
-        val df = spark.read
-            .format("csv")
-            .option("header", "true") // Si le fichier CSV contient un en-tête
-            .load("src/main/resources/DataforTest/data.json")
+    // Step 1: Parse the JSON string into an AST (Abstract Syntax Tree)
+    // Step 2: Extract the CSV configuration from the AST and map it to the CsvReader case class
 
-        df.show()
+    def getCsvReaderConfigurationFromJson(jsonString: String): CsvReader = {
+        JsonMethods.parse(
+            FileReaderUsingIOSource.getContent(jsonString)
+          ).extract[CsvReader]
     }
 
+    def getJsonReaderConfigurationFromJson(jsonString: String): JSONReader = {
+        JsonMethods.parse(
+            FileReaderUsingIOSource.getContent(jsonString)
+        ).extract[JSONReader]
+    }
+
+    def getXMLReaderConfigurationFromJson(jsonString: String): XMLReader = {
+        JsonMethods.parse(
+            FileReaderUsingIOSource.getContent(jsonString)
+        ).extract[XMLReader]
+    }
 }

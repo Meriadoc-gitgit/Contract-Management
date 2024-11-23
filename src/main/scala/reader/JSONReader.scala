@@ -1,5 +1,16 @@
 package reader
 
-class JSONReader {
+import org.apache.spark.sql.{DataFrame, SparkSession}
 
+case class JSONReader(
+                     path: String,
+                     multiline: Option[Boolean] = None
+                     ) extends Reader {
+  val format = "json"
+
+  def read()(implicit spark: SparkSession): DataFrame = {
+    spark.read.format(format)
+      .option("multiline", multiline.getOrElse(true))
+      .load(path)
+  }
 }
