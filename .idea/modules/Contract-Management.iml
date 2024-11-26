@@ -28,7 +28,7 @@
     <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.12.15:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.spark:spark-sql_2.12:3.3.1:jar" level="project" />
     <orderEntry type="library" name="sbt: com.beust:jcommander:1.48:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.databricks:spark-xml_2.12:0.14.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.fasterxml.jackson.module:jackson-module-scala_2.12:2.15.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.rocksdb:rocksdbjni:6.20.3:jar" level="project" />
     <orderEntry type="library" name="sbt: com.univocity:univocity-parsers:2.9.1:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.spark:spark-sketch_2.12:3.3.1:jar" level="project" />
@@ -40,12 +40,12 @@
     <orderEntry type="library" name="sbt: org.apache.hive:hive-storage-api:2.7.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.parquet:parquet-column:1.12.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.parquet:parquet-hadoop:1.12.2:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.fasterxml.jackson.core:jackson-databind:2.13.4.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.fasterxml.jackson.core:jackson-databind:2.15.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.xbean:xbean-asm9-shaded:4.20:jar" level="project" />
     <orderEntry type="library" name="sbt: org.spark-project.spark:unused:1.0.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: commons-io:commons-io:2.11.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.glassfish.jaxb:txw2:2.3.4:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.apache.ws.xmlschema:xmlschema-core:2.2.5:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.fasterxml.jackson.core:jackson-core:2.15.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.fasterxml.jackson.core:jackson-annotations:2.15.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.thoughtworks.paranamer:paranamer:2.8:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.avro:avro:1.11.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.avro:avro-mapred:1.11.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.twitter:chill_2.12:0.10.0:jar" level="project" />
@@ -65,6 +65,7 @@
     <orderEntry type="library" name="sbt: org.apache.commons:commons-lang3:3.12.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.commons:commons-math3:3.6.1:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.commons:commons-text:1.9:jar" level="project" />
+    <orderEntry type="library" name="sbt: commons-io:commons-io:2.11.0:jar" level="project" />
     <orderEntry type="library" name="sbt: commons-collections:commons-collections:3.2.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.commons:commons-collections4:4.4:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.code.findbugs:jsr305:3.0.2:jar" level="project" />
@@ -96,7 +97,6 @@
     <orderEntry type="library" name="sbt: io.dropwizard.metrics:metrics-json:4.2.7:jar" level="project" />
     <orderEntry type="library" name="sbt: io.dropwizard.metrics:metrics-graphite:4.2.7:jar" level="project" />
     <orderEntry type="library" name="sbt: io.dropwizard.metrics:metrics-jmx:4.2.7:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.fasterxml.jackson.module:jackson-module-scala_2.12:2.13.4:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.ivy:ivy:2.5.0:jar" level="project" />
     <orderEntry type="library" name="sbt: oro:oro:2.0.8:jar" level="project" />
     <orderEntry type="library" name="sbt: net.razorvine:pickle:1.2:jar" level="project" />
@@ -117,8 +117,6 @@
     <orderEntry type="library" name="sbt: org.apache.parquet:parquet-encoding:1.12.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.parquet:parquet-format-structures:1.12.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.parquet:parquet-jackson:1.12.2:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.fasterxml.jackson.core:jackson-annotations:2.13.4:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.fasterxml.jackson.core:jackson-core:2.13.4:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.commons:commons-compress:1.21:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.avro:avro-ipc:1.11.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.esotericsoftware:kryo-shaded:4.0.2:jar" level="project" />
@@ -152,7 +150,6 @@
     <orderEntry type="library" name="sbt: io.netty:netty-transport-native-epoll:4.1.74.Final:linux-aarch_64:jar" level="project" />
     <orderEntry type="library" name="sbt: io.netty:netty-transport-native-kqueue:4.1.74.Final:osx-x86_64:jar" level="project" />
     <orderEntry type="library" name="sbt: io.netty:netty-transport-native-kqueue:4.1.74.Final:osx-aarch_64:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.thoughtworks.paranamer:paranamer:2.8:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.arrow:arrow-format:7.0.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.arrow:arrow-memory-core:7.0.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.flatbuffers:flatbuffers-java:1.12.0:jar" level="project" />

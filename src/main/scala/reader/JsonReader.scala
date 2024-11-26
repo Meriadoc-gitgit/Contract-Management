@@ -2,7 +2,7 @@ package reader
 
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
-case class JSONReader(
+case class JsonReader(
                      path: String,
                      multiline: Option[Boolean] = None
                      ) extends Reader {

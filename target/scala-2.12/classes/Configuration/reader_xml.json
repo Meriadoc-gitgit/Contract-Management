@@ -1,4 +1,3 @@
 {
-  "path": "src/main/resources/DataforTest/data.xml",
-  "rowTag": "Client"
+  "path": "src/main/resources/DataforTest/data.xml"
 }

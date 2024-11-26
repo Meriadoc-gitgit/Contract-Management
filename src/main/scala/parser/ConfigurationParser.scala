@@ -17,15 +17,15 @@ object ConfigurationParser {
           ).extract[CsvReader]
     }
 
-    def getJsonReaderConfigurationFromJson(jsonString: String): JSONReader = {
+    def getJsonReaderConfigurationFromJson(jsonString: String): JsonReader = {
         JsonMethods.parse(
             FileReaderUsingIOSource.getContent(jsonString)
-        ).extract[JSONReader]
+        ).extract[JsonReader]
     }
 
-    def getXMLReaderConfigurationFromJson(jsonString: String): XMLReader = {
+    def getXmlReaderConfigurationFromJson(jsonString: String): XmlReader = {
         JsonMethods.parse(
             FileReaderUsingIOSource.getContent(jsonString)
-        ).extract[XMLReader]
+        ).extract[XmlReader]
     }
 }

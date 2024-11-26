@@ -22,7 +22,7 @@ object MainBatch {
         ConfigurationParser.getJsonReaderConfigurationFromJson(Args.readerConfigurationFile)
       }
       case "xml" => {
-        ConfigurationParser.getXMLReaderConfigurationFromJson(Args.readerConfigurationFile)
+        ConfigurationParser.getXmlReaderConfigurationFromJson(Args.readerConfigurationFile)
       }
       case _ => throw new Exception("Invalid reader type. Supported reader format : csv, json and xml in feature")
 
