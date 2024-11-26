@@ -504,3 +504,61 @@ nov. 26, 2024 11:27:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancell
 AVERTISSEMENT: Unmatched cancel notification for request id 35
 2024.11.26 23:27:26 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
 2024.11.26 23:27:28 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:36:07 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:36:07 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:36:09 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:36:09 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:36:29 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+nov. 26, 2024 11:36:39 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+2024.11.26 23:36:39 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:36:39 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+nov. 26, 2024 11:36:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 53
+2024.11.26 23:36:39 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:36:41 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:36:53 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:36:54 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+nov. 26, 2024 11:36:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 61
+2024.11.26 23:36:54 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:36:54 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:36:55 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:36:56 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+nov. 26, 2024 11:37:04 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+2024.11.26 23:37:04 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:04 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:06 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+nov. 26, 2024 11:37:16 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+2024.11.26 23:37:17 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:17 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+nov. 26, 2024 11:37:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 83
+2024.11.26 23:37:19 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+nov. 26, 2024 11:37:25 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+2024.11.26 23:37:25 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:26 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:27 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:28 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/Reader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:28 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/Reader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:30 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/Reader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:30 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/JsonReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:30 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/JsonReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:30 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/JsonReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:30 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/CSVReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:31 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/CSVReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:36 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/CSVReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:36 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/parser/FileReaderUsingIOSource.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:37 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/parser/FileReaderUsingIOSource.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:36 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/parser/FileReaderUsingIOSource.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:37 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/parser/ConfigurationParser.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:37 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/parser/ConfigurationParser.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:41 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/parser/ConfigurationParser.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:41 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/main/test.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:42 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/main/test.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.26 23:37:48 INFO  Shutting down server
+2024.11.26 23:37:48 INFO  shutting down Metals
+2024.11.26 23:37:48 INFO  Exiting server
