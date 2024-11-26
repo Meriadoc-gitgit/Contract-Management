@@ -93,7 +93,7 @@ case class XmlReader(
   }
 
 
-  private def postProcess(m1: Any): Any = {
+  private def removeMotherTag(m1: Any): Any = {
     // Check if m is a Map
     if (m1.isInstanceOf[Map[_, _]]) {
       val m = m1.asInstanceOf[Map[String, Any]]
@@ -125,7 +125,7 @@ case class XmlReader(
     }
   }
 
-  private def extra(m1: Any): Any = {
+  private def removeChildTag(m1: Any): Any = {
     val m = m1.asInstanceOf[List[_]]
 
     var li = List[Map[String, Any]]()  // Use var to allow reassignment
@@ -146,6 +146,7 @@ case class XmlReader(
 
 
   private def combineTag(extraM: List[Map[String, Any]]): List[Any] = {
+    // Combine tags having same name in the same Map
     var mainList: List[Any] = List()
 
     extraM.foreach { element =>
@@ -261,9 +262,13 @@ case class XmlReader(
     val source = Source.fromFile(filePath)
     val xmlString: String = source.mkString
     val parsedMap = parseXMLDocument(xmlString)
-    val cleanM = postProcess(cleanMap(parsedMap))
-    val extraM = extra(cleanM).asInstanceOf[List[Map[String, Any]]]
+    println(parsedMap+"\n\n")
+    val cleanM = removeMotherTag(cleanMap(parsedMap))
+    println(cleanM+"\n\n")
+    val extraM = removeChildTag(cleanM).asInstanceOf[List[Map[String, Any]]]
+    println(extraM+"\n\n")
     val tag = combineTag(extraM)
+    println(tag+"\n\n")
     val transformed = transformToJsonList(defineListMapString(tag.asInstanceOf[List[Map[String, List[_]]]]))
 
     writeJsonToFile(transformed, testPath)
