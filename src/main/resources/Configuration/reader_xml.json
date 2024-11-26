@@ -1,3 +1,4 @@
 {
-  "path": "src/main/resources/DataforTest/data.xml"
+  "path": "src/main/resources/DataforTest/data.xml",
+  "testPath": "src/main/resources/DataforTest/test.json"
 }

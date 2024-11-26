@@ -1,12 +1,9 @@
 package reader
 
 import org.apache.spark.sql.{DataFrame, SparkSession}
-import org.apache.spark.sql.functions._
-import org.apache.spark.sql.types._
 
 import scala.xml._
 import java.io._
-import scala.collection.mutable
 import java.io.PrintWriter
 import scala.io.Source
 import scala.util.parsing.json.JSONObject
@@ -15,12 +12,13 @@ import scala.util.parsing.json.JSONObject
 
 case class XmlReader(
                     path: String,
+                    testPath: String
                     ) extends Reader {
   val format = "json"       // Using temporary file with json extension
 //  println(path)
 
   // Helper function to recursively parse any XML element into a Map
-  def parseXML(node: Node): Map[String, Any] = {
+  private def parseXML(node: Node): Map[String, Any] = {
     // Extract the element's tag name and its children
     val tagName = node.label
     val children = node.child.filterNot(_.isInstanceOf[Text])
@@ -45,12 +43,12 @@ case class XmlReader(
 
 
   // Function to parse the entire XML and convert it to a Map structure
-  def parseXMLDocument(xml: String): Map[String, Any] = {
+  private def parseXMLDocument(xml: String): Map[String, Any] = {
     val xmlNode = XML.loadString(xml) // Load the XML as a Node
     parseXML(xmlNode) // Start parsing from the root
   }
 
-  def cleanMap(m: Map[String, Any]): Any = {
+  private def cleanMap(m: Map[String, Any]): Any = {
     val allKeys = m.keys.flatMap { key =>
       m.get(key) match {
         case Some(value: Map[_, _]) =>
@@ -62,7 +60,7 @@ case class XmlReader(
       }
     }.toList
 
-    if (m.size == 1 && allKeys.length==0) {
+    if (m.size == 1 && allKeys.isEmpty) {
 
       // If the map has only one entry, get the value of that entry
       m.head._2 match {
@@ -95,7 +93,7 @@ case class XmlReader(
   }
 
 
-  def postProcess(m1: Any): Any = {
+  private def postProcess(m1: Any): Any = {
     // Check if m is a Map
     if (m1.isInstanceOf[Map[_, _]]) {
       val m = m1.asInstanceOf[Map[String, Any]]
@@ -127,10 +125,8 @@ case class XmlReader(
     }
   }
 
-  def extra(m1: Any): Any = {
+  private def extra(m1: Any): Any = {
     val m = m1.asInstanceOf[List[_]]
-
-    val h = m.head.asInstanceOf[Map[String, Any]]
 
     var li = List[Map[String, Any]]()  // Use var to allow reassignment
 
@@ -149,7 +145,7 @@ case class XmlReader(
   }
 
 
-  def combineTag(extraM: List[Map[String, Any]]): List[Any] = {
+  private def combineTag(extraM: List[Map[String, Any]]): List[Any] = {
     var mainList: List[Any] = List()
 
     extraM.foreach { element =>
@@ -191,7 +187,7 @@ case class XmlReader(
 
 
 
-  def transformToJson(inputMap: Map[String, List[Map[String, List[String]]]]): String = {
+  private def transformToJson(inputMap: Map[String, List[Map[String, List[String]]]]): String = {
     val jsonString = inputMap.map { case (key, listOfMaps) =>
       val listJson = listOfMaps.map { map =>
         map.map {
@@ -210,7 +206,7 @@ case class XmlReader(
 
 
 
-  def defineListMapString(tag: List[Map[String, List[_]]]): List[Map[String, Any]] = {
+  private def defineListMapString(tag: List[Map[String, List[_]]]): List[Map[String, Any]] = {
     var lr = List[Map[String, Any]]()
     tag.foreach { m =>
       var mapTmp = Map[String, Any]()
@@ -231,7 +227,7 @@ case class XmlReader(
   }
 
 
-  def transformToJsonList(data: List[Map[String, Any]]): String = {
+  private def transformToJsonList(data: List[Map[String, Any]]): String = {
     val transformedList = data.map { item =>
       // Convert each key-value pair in the map to strings
       val transformedItem = item.map { case (key, value) =>
@@ -246,7 +242,7 @@ case class XmlReader(
 
 
 
-  def writeJsonToFile(json: String, filename: String): Unit = {
+  private def writeJsonToFile(json: String, filename: String): Unit = {
     val pw = new PrintWriter(new File(filename))
     try {
       pw.write(json)
@@ -261,10 +257,9 @@ case class XmlReader(
     // PREPROCESSING
     val filePath = path // Path to your XML file
 
-    val testPath = "src/main/resources/DataforTest/test.json"   // Automatically created this file if not existed
-
     // Read the entire content of the XML file into a string
-    val xmlString: String = Source.fromFile(filePath).mkString
+    val source = Source.fromFile(filePath)
+    val xmlString: String = source.mkString
     val parsedMap = parseXMLDocument(xmlString)
     val cleanM = postProcess(cleanMap(parsedMap))
     val extraM = extra(cleanM).asInstanceOf[List[Map[String, Any]]]
@@ -272,9 +267,12 @@ case class XmlReader(
     val transformed = transformToJsonList(defineListMapString(tag.asInstanceOf[List[Map[String, List[_]]]]))
 
     writeJsonToFile(transformed, testPath)
+    source.close()
+
+    val b = true
 
     spark.read.format(format)
-      .option("multiline", true)
+      .option("multiline", b)
       .load(testPath)
   }
 }
