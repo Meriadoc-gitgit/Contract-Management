@@ -9,7 +9,6 @@ case class CsvReader(
                     ) extends Reader {
 
   val format = "csv"
-
   def read()(implicit  spark: SparkSession): DataFrame = {
 
     spark.read.format(format)

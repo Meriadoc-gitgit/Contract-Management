@@ -14,8 +14,6 @@ import scala.io.Source
 object Test {
 
   def main(args: Array[String]): Unit = {
-    val reader = ConfigurationParser.getXmlReaderConfigurationFromJson("src/main/resources/Configuration/reader_xml.json")
-
     implicit val spark: SparkSession = SparkSession
       .builder
       .appName("Contract-Management")
@@ -23,9 +21,29 @@ object Test {
       .getOrCreate()
 
 
-    val testDf = reader.read()
-    testDf.formatter()
-    testDf.show()
+    // CSV
+    println("\n\nCsvReader\n\n")
+    val reader1 = ConfigurationParser.getCsvReaderConfigurationFromJson("src/main/resources/Configuration/reader_csv.json")
+
+    val testDf1 = reader1.read()
+    testDf1.formatter()
+    testDf1.show()
+
+    // JSON
+    println("\n\nJsonReader\n\n")
+    val reader2 = ConfigurationParser.getJsonReaderConfigurationFromJson("src/main/resources/Configuration/reader_json.json")
+
+    val testDf2 = reader2.read()
+    testDf2.formatter()
+    testDf2.show()
+
+    // XML
+    println("\n\nXmlReader\n\n")
+    val reader3 = ConfigurationParser.getXmlReaderConfigurationFromJson("src/main/resources/Configuration/reader_xml.json")
+
+    val testDf3 = reader3.read()
+    testDf3.formatter()
+    testDf3.show()
 
   }
 }

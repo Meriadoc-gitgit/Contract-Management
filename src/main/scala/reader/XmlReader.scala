@@ -44,7 +44,7 @@ case class XmlReader(
 
   // Function to parse the entire XML and convert it to a Map structure
   private def parseXMLDocument(xml: String): Map[String, Any] = {
-    val xmlNode = XML.loadString(xml) // Load the XML as a Node
+    val xmlNode = scala.xml.XML.loadString(xml) // Load the XML as a Node
     parseXML(xmlNode) // Start parsing from the root
   }
 
@@ -262,14 +262,20 @@ case class XmlReader(
     val source = Source.fromFile(filePath)
     val xmlString: String = source.mkString
     val parsedMap = parseXMLDocument(xmlString)
-    println(parsedMap+"\n\n")
-    val cleanM = removeMotherTag(cleanMap(parsedMap))
-    println(cleanM+"\n\n")
+//    println(parsedMap+"\n\n")
+    val tmp = cleanMap(parsedMap)
+//    println(tmp+"\n\n")
+    val cleanM = removeMotherTag(tmp)
+//    println(cleanM+"\n\n")
     val extraM = removeChildTag(cleanM).asInstanceOf[List[Map[String, Any]]]
-    println(extraM+"\n\n")
+//    println(extraM+"\n\n")
     val tag = combineTag(extraM)
-    println(tag+"\n\n")
-    val transformed = transformToJsonList(defineListMapString(tag.asInstanceOf[List[Map[String, List[_]]]]))
+//    println(tag+"\n\n")
+    val tmp2 = defineListMapString(tag.asInstanceOf[List[Map[String, List[_]]]])
+//    println(tmp2+"\n\n")
+    val transformed = transformToJsonList(tmp2)
+//    println(transformed+"\n\n")
+
 
     writeJsonToFile(transformed, testPath)
     source.close()
