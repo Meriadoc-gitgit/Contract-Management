@@ -562,3 +562,10 @@ INFOS: Unsupported notification method: $/setTrace
 2024.11.26 23:37:48 INFO  Shutting down server
 2024.11.26 23:37:48 INFO  shutting down Metals
 2024.11.26 23:37:48 INFO  Exiting server
+2024.12.01 09:18:24 INFO  Started: Metals version 1.4.1 in folders '/Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management' for client Visual Studio Code 1.95.0.
+2024.12.01 09:18:26 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.12.01 09:18:26 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.12.01 09:18:37 INFO  no build target found for /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/src/main/scala/reader/XmlReader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.12.01 12:07:25 INFO  Shutting down server
+2024.12.01 12:07:25 INFO  shutting down Metals
+2024.12.01 12:07:25 INFO  Exiting server
