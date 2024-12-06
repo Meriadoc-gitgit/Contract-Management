@@ -1,0 +1,46 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.10.5 (Oracle Corporation Java 1.8.0_421)
+[debug] Load.defaultLoad until apply took 102.638584ms
+[debug]           Load.loadUnit: plugins took 83.316833ms
+[debug]           Load.loadUnit: defsScala took 0.230042ms
+[debug] [Loading] Scanning directory /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 23.498125 ms
+[debug]               Load.resolveProject(contract-management-build) took 120.213375ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id contract-management-build, base: /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/project, plugins: List(<none>))) took 172.596833ms
+[debug] [Loading] Done in /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/project, returning: (contract-management-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 188.010542ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.194959ms
+[debug]         Load.loadUnit(file:/Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/project/, ...) took 276.861667ms
+[debug]       Load.apply: load took 620.326458ms
+[debug]       Load.apply: resolveProjects took 4.813458ms
+[debug]       Load.apply: finalTransforms took 44.072666ms
+[debug]       Load.apply: config.delegates took 4.516625ms
+[debug]       Load.apply: Def.make(settings)... took 295.211166ms
+[debug]       Load.apply: structureIndex took 74.77425ms
+[debug]       Load.apply: mkStreams took 1.657333ms
+[info] loading project definition from /Users/vuhoangthuyduong/Documents/SDA/Spark/Projet_Intellij/Contract-Management/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
