@@ -1,4 +1,4 @@
 [{"Id_Client" : "4", "HTT_TVA" : "5.546|0.15", "MetaData" : "{\"MetaTransaction\":[{\"TypeProd\":\"Laitier\",\n\"produit\":\"laitcoco\"}\n,\n{\"Ville\":\"Abidjan\",\n\"Date_End_contrat\":\"2024-12-23 00:00:00\"}\n]\n}"},
 {"Id_Client" : "3", "HTT_TVA" : "123.6|0.201", "MetaData" : "{\"MetaTransaction\":[{\"TypeProd\":\"Laitier\",\n\"produit\":\"yaourt\"}\n,\n{\"Ville\":\"Dakar\",\n\"Date_End_contrat\":\"2020-12-23 00:00:00\"}\n]\n}"},
-{"Id_Client" : "2", "HTT_TVA" : "120.546|0.20", "MetaData" : "{\"MetaTransaction\":[{\"TypeProd\":\"Boisson\",\n\"produit\":[\"coca\",\"fanta\"]\n}\n,\n{\"Ville\":\"Alger\",\n\"Date_End_contrat\":\"2024-12-23 00:00:00\"}\n]\n}"},
-{"Id_Client" : "1", "HTT_TVA" : "100.5|0.19", "MetaData" : "{\"MetaTransaction\":[{\"TypeProd\":\"Laitier\",\n\"produit\":[\"yaourt\",\"laitcoco\"]\n}\n,\n{\"Ville\":\"Paris\",\n\"Date_End_contrat\":\"2024-12-23 00:00:00\"}\n]\n}"}]
+{"Id_Client" : "2", "HTT_TVA" : "120.546|0.20", "MetaData" : "{\"MetaTransaction\":[{\"TypeProd\":\"Boisson\",\n\"produit\":[\"coca\",\"fanta\"]\n}\n,\n{\"Ville\":\"Alger\",\n\"Date_End_contrat\":\"2023-12-23 00:00:00\"}\n]\n}"},
+{"Id_Client" : "1", "HTT_TVA" : "100.5|0.19", "MetaData" : "{\"MetaTransaction\":[{\"TypeProd\":\"Laitier\",\n\"produit\":[\"yaourt\",\"laitcoco\"]\n}\n,\n{\"Ville\":\"Paris\",\n\"Date_End_contrat\":\"2020-12-23 00:00:00\"}\n]\n}"}]

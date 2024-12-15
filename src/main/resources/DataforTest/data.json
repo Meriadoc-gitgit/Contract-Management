@@ -2,12 +2,12 @@
   {
     "Id_Client": "1",
     "HTT_TVA": "100,5|0,19",
-    "MetaData": "{\"MetaTransaction\":[{\"Ville\":\"Paris\",\"Date_End_contrat\":\"2024-12-23 00:00:00\"},{\"TypeProd\":\"Laitier\",\"produit\":[\"yaourt\",\"laitcoco\"]}]}"
+    "MetaData": "{\"MetaTransaction\":[{\"Ville\":\"Paris\",\"Date_End_contrat\":\"2020-12-23 00:00:00\"},{\"TypeProd\":\"Laitier\",\"produit\":[\"yaourt\",\"laitcoco\"]}]}"
   },
   {
     "Id_Client": "2",
     "HTT_TVA": "120,546|0,20",
-    "MetaData": "{\"MetaTransaction\":[{\"Ville\":\"Alger\",\"Date_End_contrat\":\"2024-12-23 00:00:00\"},{\"TypeProd\":\"Boison\",\"produit\":[\"coca\",\"fanta\"]}]}"
+    "MetaData": "{\"MetaTransaction\":[{\"Ville\":\"Alger\",\"Date_End_contrat\":\"2023-12-23 00:00:00\"},{\"TypeProd\":\"Boison\",\"produit\":[\"coca\",\"fanta\"]}]}"
   },
   {
     "Id_Client": "3",

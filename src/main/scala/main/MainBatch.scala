@@ -27,14 +27,14 @@ object MainBatch {
       case _ => throw new Exception("Invalid reader type. Supported reader format : csv, json and xml in feature")
 
     }
-//    val df=reader.read().formatter()
-//    println("***********************Resultat Question1*****************************")
-//    df.show(20)
-//    println("***********************Resultat Question2*****************************")
-//    df.calculTTC().show(20)
-//    println("***********************Resultat Question3*****************************")
-//    df.calculTTC.extractDateEndContratVille.show
-//    println("***********************Resultat Question4*****************************")
-//    df.calculTTC.extractDateEndContratVille.contratStatus.show(20)
+    val df=reader.read().formatter()
+    println("***********************Resultat Question1*****************************")
+    df.show(20)
+    println("***********************Resultat Question2*****************************")
+    df.calculTTC().show(20)
+    println("***********************Resultat Question3*****************************")
+    df.calculTTC.extractDateEndContratVille.show
+    println("***********************Resultat Question4*****************************")
+    df.calculTTC.extractDateEndContratVille.contratStatus.show(20)
   }
 }

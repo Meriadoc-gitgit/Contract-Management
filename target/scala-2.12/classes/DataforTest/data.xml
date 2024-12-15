@@ -5,7 +5,7 @@
         <MetaData>
             <MetaTransaction>
                 <Ville>Paris</Ville>
-                <Date_End_contrat>2024-12-23 00:00:00</Date_End_contrat>
+                <Date_End_contrat>2020-12-23 00:00:00</Date_End_contrat>
             </MetaTransaction>
             <MetaTransaction>
                 <TypeProd>Laitier</TypeProd>
@@ -20,7 +20,7 @@
         <MetaData>
             <MetaTransaction>
                 <Ville>Alger</Ville>
-                <Date_End_contrat>2024-12-23 00:00:00</Date_End_contrat>
+                <Date_End_contrat>2023-12-23 00:00:00</Date_End_contrat>
             </MetaTransaction>
             <MetaTransaction>
                 <TypeProd>Boisson</TypeProd>
