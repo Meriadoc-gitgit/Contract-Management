@@ -28,14 +28,22 @@ object MainBatch {
 
     }
     val df=reader.read().formatter()
+    assert(df.select("HTT_TVA").count() > 0, "DataFrame is empty")
+
+
     println("***********************Resultat Question1*****************************")
     df.show(20)
     println("***********************Resultat Question2*****************************")
     df.calculTTC().show(20)
+    println(df.calculTTC.select("TTC").where(df.col("Id_Client")===1)==119.6, "Error in CalculTTC")
+
     println("***********************Resultat Question3*****************************")
     df.calculTTC.extractDateEndContratVille.show
+    println(df.calculTTC.extractDateEndContratVille.select("Date_End_contrat").where(df.col("Id_Client")===1)=="2020-12-23", "Error in extractDateEndContratVille")
+
     println("***********************Resultat Question4*****************************")
     df.calculTTC.extractDateEndContratVille.contratStatus.show(20)
+    println(df.calculTTC.extractDateEndContratVille.contratStatus.select("Contrat_Status").where(df.col("Id_Client")===1)=="Expired", "Error in contratStatus")
 
 
 
